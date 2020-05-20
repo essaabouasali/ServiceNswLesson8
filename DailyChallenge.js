@@ -80,7 +80,7 @@ console.log(filteredPets);
 // Do the same for all the String Extension Method Questions from Week 1 Day 5. 
 //My links to these exercises are below:
 
-let sentence = "The quick brown fox jumps over the lazy dog.";
+let sentence = "The quick dog brown fox jumps over the lazy dog";
 
 // 1 Write function that searches for a string inside the sentence above. The function should return true if the string is found or false otherwise
 
@@ -146,14 +146,14 @@ const stringToArray = myString => myString.split(" ");
 
 
 const countOccurrences = searchTerm => {
-    return sentence.split("").reduce( (count , current) => {
+    return sentence.split(" ").reduce( (count , current) => {
         if(current == searchTerm)
            { count++;
            }
            return count;
     },0);
 }
-//console.log(countOccurrences("e"));
+console.log(countOccurrences("dog"));
 
 
 // RegEx
